@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --rightside-color: #f1f1f1;
+    --leftside-color: #1f1e1e;
+    --main-color: #a6a5a5;
+}
+
+body{
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.3);
+}
+
+.container .left_side{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: var(--leftside-color);
+    padding: 30px;
+}
+.profile-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.profile-img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+.contact h2{
+    color: white;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.4em;
+    border-bottom: 3px solid white;
+    width: 100%;
+    margin-right: auto;
+}
+.contact_info{
+    margin-top: 20px;
+}
+.contact_info i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    background: white;
+    border-radius: 50%;
+    color: var(--leftside-color);
+    font-size: 16px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.contact_info li{
+    display: flex;
+    color: white;
+    font-size: 13px;
+}
+.contact_info span, a{
+    display: flex;
+    color: white;
+}
+.contact_info a:hover{
+    color: gray;
+}
+
+.softskills h2{
+    color: white;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.4em;
+    border-bottom: 3px solid white;
+    width: 100%;
+    margin-right: auto;
+}
+.softskills_item{
+    margin-top: 20px;
+}
+.softskills_item li{
+    color: white;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.hardskills h2{
+    color: white;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.4em;
+    border-bottom: 3px solid white;
+    width: 100%;
+    margin-right: auto;
+}
+.hardskills_item{
+    margin-top: 20px;
+}
+.hardskills_item li{
+    color: white;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.container .right_side{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: var(--rightside-color);
+    padding: 40px;
+}
+.profile_text{
+    text-align: center;
+    margin-top: 10px;
+}
+.profile_text span{
+    font-size: 40px;
+    font-weight: 900;
+}
+.profile_text p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.description_text p{
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.work_text h2{
+    color: var(--leftside-color);
+    margin-top: 30px;
+    text-align: left;
+    line-height: 1.4em;
+    border-bottom: 3px solid var(--leftside-color);
+    width: 100%;
+    margin-right: auto;
+}
+.work_text h5{
+    margin-top: 20px;
+}
+.work_text p{
+    font-size: 13px;
+    text-align: justify;
+}
+
+.project_text h2{
+    color: var(--leftside-color);
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.4em;
+    border-bottom: 3px solid var(--leftside-color);
+    width: 100%;
+    margin-right: auto;
+}
+.project_text h5{
+    margin-top: 20px;
+}
+.project_text p{
+    font-size: 13px;
+    text-align: justify;
+}
+
+.education_text h2{
+    color: var(--leftside-color);
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.4em;
+    border-bottom: 3px solid var(--leftside-color);
+    width: 100%;
+    margin-right: auto;
+}
+.education_text h5{
+    margin-top: 20px;
+}
+.education_text p{
+    font-size: 13px;
+    text-align: justify;
+}
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
